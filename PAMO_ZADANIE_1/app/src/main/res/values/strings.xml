@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">PAMO_ZADANIE_1</string>
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">Oblicz swój wskaźnik BMI</string>
+    <string name="current_weight">Twoja aktualna waga</string>
+    <string name="current_height">Twój aktualny wzrost</string>
+    <string name="minus">-</string>
+    <string name="plus">+</string>
+    <string name="weight">70</string>
+    <string name="height">170</string>
+    <string name="button_left">Kobieta</string>
+    <string name="button_right">Mężczyzna</string>
+    <string name="submit">Oblicz swoje BMI</string>
+    <string name="result">Twoje BMI: -</string>
+    <string name="previous">Previous</string>
+    <string name="buttonSecond">Nie powinno być tej strony</string>
+
+
+</resources>

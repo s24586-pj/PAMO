@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <fragment
+        android:id="@+id/nav_host_fragment_content_main"
+        android:name="androidx.navigation.fragment.NavHostFragment"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:defaultNavHost="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:navGraph="@navigation/nav_graph" />
+
+<!--    <Button-->
+<!--        android:id="@+id/button_first"-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="@string/button_left"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintEnd_toStartOf="@id/button_third"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        android:layout_marginEnd="16dp"/>-->
+
+<!--    <Button-->
+<!--        android:id="@+id/button_third"-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="@string/button_right"-->
+<!--        app:layout_constraintStart_toEndOf="@id/button_first"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        android:layout_marginStart="16dp"/>-->
+
+    <TextView
+        android:id="@+id/title_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/current_weight"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="32dp"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/buttonDecreaseWeight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/minus"
+        android:textSize="24sp"
+        app:layout_constraintTop_toBottomOf="@id/title_text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/weight_text"
+        android:layout_marginTop="16dp" />
+
+    <TextView
+        android:id="@+id/weight_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/weight"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/title_text"
+        app:layout_constraintStart_toEndOf="@id/buttonDecreaseWeight"
+        app:layout_constraintEnd_toStartOf="@id/buttonIncreaseWeight"
+        android:layout_marginTop="16dp" />
+
+    <Button
+        android:id="@+id/buttonIncreaseWeight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/plus"
+        android:textSize="24sp"
+        app:layout_constraintTop_toBottomOf="@id/title_text"
+        app:layout_constraintStart_toEndOf="@id/weight_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp" />
+
+    <TextView
+        android:id="@+id/height_title_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/current_height"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/buttonIncreaseWeight"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="32dp"/>
+
+    <Button
+        android:id="@+id/buttonDecreaseHeight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/minus"
+        android:textSize="24sp"
+        app:layout_constraintTop_toBottomOf="@id/height_title_text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/height_text"
+        android:layout_marginTop="16dp" />
+
+    <TextView
+        android:id="@+id/height_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/height"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/height_title_text"
+        app:layout_constraintStart_toEndOf="@id/buttonDecreaseHeight"
+        app:layout_constraintEnd_toStartOf="@id/buttonIncreaseHeight"
+        android:layout_marginTop="16dp" />
+
+    <Button
+        android:id="@+id/buttonIncreaseHeight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/plus"
+        android:textSize="24sp"
+        app:layout_constraintTop_toBottomOf="@id/height_title_text"
+        app:layout_constraintStart_toEndOf="@id/height_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp" />
+
+    <Button
+        android:id="@+id/button_calculate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/submit"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@id/buttonIncreaseHeight"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="32dp" />
+
+    <TextView
+        android:id="@+id/bmi_result_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/result"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/button_calculate"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
