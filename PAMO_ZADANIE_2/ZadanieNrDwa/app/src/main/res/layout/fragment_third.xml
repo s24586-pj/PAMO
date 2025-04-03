@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SecondFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+
+        <Button
+            android:id="@+id/gender_male"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/button_male"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/gender_female"
+            app:layout_constraintHorizontal_bias="0.33"
+            android:layout_marginTop="16dp" />
+
+        <Button
+            android:id="@+id/gender_female"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/button_woman"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toEndOf="@id/gender_male"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.66"
+            android:layout_marginTop="16dp" />
+
+        <TextView
+            android:id="@+id/age_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/label_age"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/gender_male"
+            android:layout_marginTop="16dp" />
+
+        <EditText
+            android:id="@+id/age_input"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/input_age"
+            android:inputType="number"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/age_label"
+            android:layout_marginTop="8dp"
+            android:padding="10dp"/>
+
+        <TextView
+            android:id="@+id/weight_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/label_weight"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/age_input"
+            android:layout_marginTop="16dp" />
+
+        <EditText
+            android:id="@+id/weight_input"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:autofillHints="@string/input_weight"
+            android:hint="@string/input_weight"
+            android:inputType="numberDecimal"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/weight_label"
+            android:layout_marginTop="8dp"
+            android:padding="10dp"/>
+
+        <TextView
+            android:id="@+id/height_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/input_height"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/weight_input"
+            android:layout_marginTop="16dp" />
+
+        <EditText
+            android:id="@+id/height_input"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/input_height"
+            android:inputType="number"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/height_label"
+            android:layout_marginTop="8dp"
+            android:padding="10dp"/>
+
+        <TextView
+            android:id="@+id/activity_level_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/label_acitve"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@id/height_input"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="32dp"
+            android:gravity="center" />
+
+        <Button
+            android:id="@+id/activity_low"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/button_low"
+            app:layout_constraintTop_toBottomOf="@id/activity_level_title"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/activity_medium"
+            android:layout_marginTop="16dp" />
+
+        <Button
+            android:id="@+id/activity_medium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/button_mid"
+            app:layout_constraintTop_toBottomOf="@id/activity_level_title"
+            app:layout_constraintStart_toEndOf="@id/activity_low"
+            app:layout_constraintEnd_toStartOf="@id/activity_high"
+            app:layout_constraintHorizontal_bias="0.5"
+            android:layout_marginTop="16dp" />
+
+        <Button
+            android:id="@+id/activity_high"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/button_high"
+            app:layout_constraintTop_toBottomOf="@id/activity_level_title"
+            app:layout_constraintStart_toEndOf="@id/activity_medium"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="16dp" />
+
+        <Button
+            android:id="@+id/calculate_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/button_calculate_kcal"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/activity_high"
+            android:layout_marginTop="24dp"
+            android:padding="16dp"/>
+
+        <TextView
+            android:id="@+id/calorie_result_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/result_kcal"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/calculate_button"
+            android:layout_marginTop="16dp"/>
+
+        <TextView
+            android:id="@+id/meal_suggestions"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/leabel_meal"
+            android:textSize="16sp"
+            android:layout_marginTop="42dp"
+            app:layout_constraintTop_toTopOf="@id/calorie_result_text"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:gravity="center" />
+
+        <Button
+            android:id="@+id/back_to_main_from_kcal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            android:text="@string/previous"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/meal_suggestions" />
+
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">ZadanieNrDwa</string>
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Powrót do strony głównej</string>
+    <string name="first_fragment_label">Oblicz swój wskaźnik BMI</string>
+    <string name="current_weight">Twoja aktualna waga</string>
+    <string name="current_height">Twój aktualny wzrost</string>
+    <string name="minus">-</string>
+    <string name="plus">+</string>
+    <string name="weight">70</string>
+    <string name="height">170</string>
+    <string name="button_woman">Kobieta</string>
+    <string name="button_male">Mężczyzna</string>
+    <string name="label_age">Wiek</string>
+    <string name="input_age">Podaj wiek</string>
+    <string name="label_weight">Waga (kg)</string>
+    <string name="input_weight">Podaj wage</string>
+    <string name="label_height">Wzrost (cm)</string>
+    <string name="input_height">Podaj wzrost</string>
+    <string name="button_low">Niska</string>
+    <string name="button_mid">Średnia</string>
+    <string name="button_high">Wysoka</string>
+    <string name="button_result_kcal">Oblicz zapotrzebowanie</string>
+    <string name="result_kcal">Zapotrzebowanie kaloryczne:</string>
+    <string name="leabel_meal">Propozycje posiłków:</string>
+    <string name="label_acitve">Wybierz poziom aktywności</string>
+    <string name="submit">Oblicz swoje BMI</string>
+    <string name="result">Twoje BMI: -</string>
+    <string name="buttonSecond">Nie powinno być tej strony</string>
+    <string name="image_description">Sports boy</string>
+    <string name="button_calculate_bmi">Wskaźnik masy ciała</string>
+    <string name="button_calculate_kcal">Zapotrzebowanie kaloryczne</string>
+    <string name="main_page">Strona główna</string>
+
+</resources>
