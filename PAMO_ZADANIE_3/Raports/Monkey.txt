@@ -1,0 +1,161 @@
+PS C:\Users\jankry\AndroidStudioProjects> C:\Users\jankry\AppData\Local\Android\Sdk\platform-tools\adb.exe shell monkey -p com.example.zadanienrdwa -v 500
+  bash arg: -p
+  bash arg: com.example.zadanienrdwa
+  bash arg: -v
+  bash arg: 500
+args: [-p, com.example.zadanienrdwa, -v, 500]
+ arg: "-p"
+ arg: "com.example.zadanienrdwa"
+ arg: "-v"
+ arg: "500"
+data="com.example.zadanienrdwa"
+:Monkey: seed=1745489832087 count=500
+:AllowPackage: com.example.zadanienrdwa
+:IncludeCategory: android.intent.category.LAUNCHER
+:IncludeCategory: android.intent.category.MONKEY
+// Event percentages:
+//   0: 15.0%
+//   1: 10.0%
+//   2: 2.0%
+//   3: 15.0%
+//   4: -0.0%
+//   5: -0.0%
+//   6: 25.0%
+//   7: 15.0%
+//   8: 2.0%
+//   9: 2.0%
+//   10: 1.0%
+//   11: 13.0%
+:Switch: #Intent;action=android.intent.action.MAIN;category=android.intent.category.LAUNCHER;launchFlags=0x10200000;component=com.example.zadanienrdwa/.MainActivity;end
+    // Allowing start of Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] cmp=com.example.zadanienrdwa/.MainActivity } in package com.example.zadanienrdwa
+:Sending Trackball (ACTION_MOVE): 0:(-5.0,-4.0)
+:Switch: #Intent;action=android.intent.action.MAIN;category=android.intent.category.LAUNCHER;launchFlags=0x10200000;component=com.example.zadanienrdwa/.MainActivity;end
+    // Allowing start of Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] cmp=com.example.zadanienrdwa/.MainActivity } in package com.example.zadanienrdwa
+:Sending Trackball (ACTION_MOVE): 0:(-2.0,4.0)
+:Sending Trackball (ACTION_MOVE): 0:(-5.0,1.0)
+:Sending Trackball (ACTION_MOVE): 0:(0.0,-5.0)
+:Sending Trackball (ACTION_MOVE): 0:(-5.0,-4.0)
+    // Rejecting start of Intent { act=android.intent.action.CALL_BUTTON cmp=com.google.android.dialer/com.android.dialer.main.impl.MainActivity } in package com.google.android.dialer
+    //[calendar_time:2025-04-22 18:11:03.678  system_uptime:8239642]
+    // Sending event #100
+    //[calendar_time:2025-04-22 18:11:03.684  system_uptime:8239643]
+    // Sending event #100
+:Sending Trackball (ACTION_MOVE): 0:(0.0,-2.0)
+    // Rejecting start of Intent { act=android.intent.action.CALL_BUTTON cmp=com.google.android.dialer/com.android.dialer.main.impl.MainActivity } in package com.google.android.dialer
+:Sending Trackball (ACTION_MOVE): 0:(-5.0,-2.0)
+:Sending Trackball (ACTION_MOVE): 0:(-3.0,0.0)
+// CRASH: com.example.zadanienrdwa (pid 12308)
+// Short Msg: java.lang.IllegalArgumentException
+// Long Msg: java.lang.IllegalArgumentException: Navigation action/destination com.example.zadanienrdwa:id/action_FirstFragment_to_thirdFragment cannot be found from the current destination Destination(com.example.zadanienrdwa:id/SecondFragment) label=Second Fragment class=com.example.zadanienrdwa.SecondFragment
+// Build Label: google/sdk_gphone64_x86_64/emu64xa:16/BP22.250221.010/13193326:user/release-keys
+// Build Changelist: 13193326
+// Build Time: 1741674196000
+// java.lang.IllegalArgumentException: Navigation action/destination com.example.zadanienrdwa:id/action_FirstFragment_to_thirdFragment cannot be found from the current destination Destination(com.example.zadanienrdwa:id/SecondFragment) label=Second Fragment class=com.example.zadanienrdwa.SecondFragment
+//      at androidx.navigation.NavController.navigate(NavController.kt:1849)
+//      at androidx.navigation.NavController.navigate(NavController.kt:1760)
+//      at androidx.navigation.NavController.navigate(NavController.kt:1741)
+//      at androidx.navigation.NavController.navigate(NavController.kt:1726)
+//      at com.example.zadanienrdwa.FirstFragment.lambda$onViewCreated$1$com-example-zadanienrdwa-FirstFragment(FirstFragment.java:38)
+//      at com.example.zadanienrdwa.FirstFragment$$ExternalSyntheticLambda1.onClick(D8$$SyntheticClass:0)
+//      at android.view.View.performClick(View.java:8083)
+//      at com.google.android.material.button.MaterialButton.performClick(MaterialButton.java:1218)
+//      at android.view.View.performClickInternal(View.java:8060)
+//      at android.view.View.-$$Nest$mperformClickInternal(Unknown Source:0)
+//      at android.view.View$PerformClick.run(View.java:31532)
+//      at android.os.Handler.handleCallback(Handler.java:995)
+//      at android.os.Handler.dispatchMessage(Handler.java:103)
+//      at android.os.Looper.loopOnce(Looper.java:248)
+//      at android.os.Looper.loop(Looper.java:338)
+//      at android.app.ActivityThread.main(ActivityThread.java:8982)
+//      at java.lang.reflect.Method.invoke(Native Method)
+//      at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:593)
+//      at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:932)
+//
+** Monkey aborted due to error.
+Events injected: 197
+:Sending rotation degree=0, persist=false
+:Dropped: keys=0 pointers=0 trackballs=0 flips=0 rotations=0
+## Network stats: elapsed time=2370ms (0ms mobile, 0ms wifi, 2370ms not connected)
+** System appears to have crashed at event 197 of 500 using seed 1745489832087
+PS C:\Users\jankry\AndroidStudioProjects> C:\Users\jankry\AppData\Local\Android\Sdk\platform-tools\adb.exe shell monkey -p com.example.zadanienrdwa -v 500
+  bash arg: -p
+  bash arg: com.example.zadanienrdwa
+  bash arg: -v
+  bash arg: 500
+args: [-p, com.example.zadanienrdwa, -v, 500]
+ arg: "-p"
+ arg: "com.example.zadanienrdwa"
+ arg: "-v"
+ arg: "500"
+data="com.example.zadanienrdwa"
+:Monkey: seed=1745386081088 count=500
+:AllowPackage: com.example.zadanienrdwa
+:IncludeCategory: android.intent.category.LAUNCHER
+:IncludeCategory: android.intent.category.MONKEY
+// Event percentages:
+//   0: 15.0%
+//   1: 10.0%
+//   2: 2.0%
+//   3: 15.0%
+//   4: -0.0%
+//   5: -0.0%
+//   6: 25.0%
+//   7: 15.0%
+//   8: 2.0%
+//   9: 2.0%
+//   10: 1.0%
+//   11: 13.0%
+:Switch: #Intent;action=android.intent.action.MAIN;category=android.intent.category.LAUNCHER;launchFlags=0x10200000;component=com.example.zadanienrdwa/.MainActivity;end
+    // Allowing start of Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] cmp=com.example.zadanienrdwa/.MainActivity } in package com.example.zadanienrdwa
+:Sending Trackball (ACTION_MOVE): 0:(-1.0,-3.0)
+:Switch: #Intent;action=android.intent.action.MAIN;category=android.intent.category.LAUNCHER;launchFlags=0x10200000;component=com.example.zadanienrdwa/.MainActivity;end
+    // Allowing start of Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] cmp=com.example.zadanienrdwa/.MainActivity } in package com.example.zadanienrdwa
+:Sending Flip keyboardOpen=false
+Got IOException performing flipjava.io.FileNotFoundException: /dev/input/event0: open failed: EACCES (Permission denied)
+    // Injection Failed
+:Sending Trackball (ACTION_MOVE): 0:(2.0,-3.0)
+:Sending Trackball (ACTION_MOVE): 0:(-1.0,4.0)
+    //[calendar_time:2025-04-22 18:15:37.802  system_uptime:8513769]
+    // Sending event #100
+:Sending Trackball (ACTION_MOVE): 0:(-1.0,-3.0)
+:Sending Trackball (ACTION_MOVE): 0:(3.0,1.0)
+:Sending Trackball (ACTION_MOVE): 0:(2.0,-4.0)
+    //[calendar_time:2025-04-22 18:15:38.355  system_uptime:8514314]
+    // Sending event #200
+:Sending Trackball (ACTION_MOVE): 0:(-2.0,-1.0)
+:Sending Trackball (ACTION_MOVE): 0:(-2.0,-5.0)
+:Sending Trackball (ACTION_MOVE): 0:(-2.0,1.0)
+:Sending Trackball (ACTION_MOVE): 0:(2.0,-1.0)
+:Sending Trackball (ACTION_MOVE): 0:(-2.0,-4.0)
+:Sending Trackball (ACTION_MOVE): 0:(2.0,2.0)
+:Sending Trackball (ACTION_MOVE): 0:(2.0,3.0)
+    //[calendar_time:2025-04-22 18:15:38.840  system_uptime:8514799]
+    // Sending event #300
+:Sending Trackball (ACTION_MOVE): 0:(4.0,1.0)
+:Sending Flip keyboardOpen=true
+Got IOException performing flipjava.io.FileNotFoundException: /dev/input/event0: open failed: EACCES (Permission denied)
+    // Injection Failed
+:Sending Trackball (ACTION_MOVE): 0:(-1.0,-1.0)
+:Sending Trackball (ACTION_MOVE): 0:(3.0,4.0)
+:Sending Trackball (ACTION_MOVE): 0:(-4.0,-2.0)
+:Sending Trackball (ACTION_MOVE): 0:(-2.0,-5.0)
+:Sending Trackball (ACTION_MOVE): 0:(1.0,-2.0)
+    //[calendar_time:2025-04-22 18:15:39.007  system_uptime:8514967]
+    // Sending event #400
+:Sending Trackball (ACTION_MOVE): 0:(1.0,3.0)
+:Sending Trackball (ACTION_MOVE): 0:(1.0,-3.0)
+:Switch: #Intent;action=android.intent.action.MAIN;category=android.intent.category.LAUNCHER;launchFlags=0x10200000;component=com.example.zadanienrdwa/.MainActivity;end
+    // Allowing start of Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] cmp=com.example.zadanienrdwa/.MainActivity } in package com.example.zadanienrdwa
+:Sending Trackball (ACTION_MOVE): 0:(2.0,-2.0)
+:Sending Trackball (ACTION_MOVE): 0:(-1.0,-5.0)
+:Sending Flip keyboardOpen=false
+Got IOException performing flipjava.io.FileNotFoundException: /dev/input/event0: open failed: EACCES (Permission denied)
+    // Injection Failed
+:Sending Trackball (ACTION_MOVE): 0:(0.0,3.0)
+:Sending Trackball (ACTION_MOVE): 0:(0.0,-2.0)
+Events injected: 500
+:Sending rotation degree=0, persist=false
+:Dropped: keys=0 pointers=0 trackballs=0 flips=3 rotations=0
+## Network stats: elapsed time=1809ms (0ms mobile, 0ms wifi, 1809ms not connected)
+// Monkey finished
+PS C:\Users\jankry\AndroidStudioProjects>
